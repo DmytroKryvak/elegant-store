@@ -73,7 +73,7 @@
     "title": "Beats Studio Pro",
     "price": "$224.99",
     "status": "HOT",
-    "rating": 3
+    "rating": 5
   },
 
   {
@@ -81,7 +81,7 @@
     "title": "JBL Reflect Flow Pro+ Bluetooth Truly Wireless Sports",
     "price": "$179.95",
     "status": "HOT",
-    "rating": 3
+    "rating": 5
   },
 
   {
@@ -89,7 +89,7 @@
     "title": "Bose QuietComfort Headphones",
     "price": "$349.00",
     "status": "HOT",
-    "rating": 3
+    "rating": 4
   },
 
   {
@@ -97,6 +97,6 @@
     "title": "AKG Y600NC Wireless",
     "price": "$349.99",
     "status": "HOT",
-    "rating": 3
+    "rating": 2
   }
 ]
