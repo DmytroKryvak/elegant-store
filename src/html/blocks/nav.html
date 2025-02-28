@@ -20,7 +20,7 @@
         <button class="nav__btn">
           <img src="./img/icons/search.svg" alt="search" />
         </button>
-        <button class="nav__btn">
+        <button class="nav__btn" id="profileBtn">
           <img src="./img/icons/user.svg" alt="user" />
         </button>
         <button class="nav__btn">
@@ -28,6 +28,20 @@
           <span class="nav__btn-count">2</span>
         </button>
       </ul>
+    </div>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times</span>
+      <h2 class="modal__title">Вхід</h2>
+      <form class="login__form" id="loginForm">
+        <label>Email</label>
+        <input class="login__input" type="email" required />
+
+        <label>Пароль</label>
+        <input class="login__input" type="password" required />
+        <button class="login__btn" type="submit">Увійти</button>
+      </form>
     </div>
   </div>
 </nav>
