@@ -1,0 +1,12 @@
+.values {
+  padding: 40px 0;
+}
+
+.values__grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+}
