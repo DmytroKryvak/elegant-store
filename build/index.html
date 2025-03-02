@@ -11,20 +11,43 @@
     
     <div class="tagline">
   <img class="tagline__icon" src="./img/icons/ticket-percent.svg" alt="Icon" />
-  <div class="tagline__desc">30% off storewide — Limited time!</div>
-  <a href="#!" class="tagline__link">
+  <span class="tagline__desc">30% off storewide — Limited time!</span>
+  <span class="tagline__link">
     Shop Now
     <img src="./img/icons/arrow-right.svg" alt="Icon" />
-  </a>
+  </span>
 
   <button class="tagline__close">
-    <img src="./img/icons/close.svg" alt="Close" />
+    <!-- <img src="./img/icons/close.svg" alt="Close" /> -->
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M15.4419 5.44194C15.686 5.19786 15.686 4.80214 15.4419 4.55806C15.1979 4.31398 14.8021 4.31398 14.5581 4.55806L10 9.11612L5.44194 4.55806C5.19786 4.31398 4.80214 4.31398 4.55806 4.55806C4.31398 4.80214 4.31398 5.19786 4.55806 5.44194L9.11612 10L4.55806 14.5581C4.31398 14.8021 4.31398 15.1979 4.55806 15.4419C4.80214 15.686 5.19786 15.686 5.44194 15.4419L10 10.8839L14.5581 15.4419C14.8021 15.686 15.1979 15.686 15.4419 15.4419C15.686 15.1979 15.686 14.8021 15.4419 14.5581L10.8839 10L15.4419 5.44194Z"
+      />
+    </svg>
   </button>
+  <a href="#!" class="tagline__link-overlay"></a>
 </div>
  <nav class="nav">
   <div class="container">
     <div class="nav__row">
-      <a href="" class="nav__logo logo">3legant. </a>
+      <div class="nav__logo">
+        <button class="nav__btn-mobile-nav">
+          <img
+            src="./img/icons/menu-line-horizontal.svg"
+            alt="menu navigation"
+          />
+        </button>
+        <a href="" class="nav__logo logo">3legant.</a>
+      </div>
+
       <ul class="nav__list">
         <li class="nav__item"><a href="#!" class="nav__link">Home</a></li>
         <li class="nav__item">
@@ -39,18 +62,18 @@
         </li>
         <li class="nav__item"><a href="#!" class="nav__link">Contact Us</a></li>
       </ul>
-      <ul class="nav__btns">
-        <button class="nav__btn">
+      <div class="nav__btns">
+        <button class="nav__btn nav__btn--search">
           <img src="./img/icons/search.svg" alt="search" />
         </button>
-        <button class="nav__btn" id="profileBtn">
+        <button class="nav__btn nav__btn--user" id="profileBtn">
           <img src="./img/icons/user.svg" alt="user" />
         </button>
         <button class="nav__btn">
           <img src="./img/icons/shopping-bag.svg" alt="Shop Bag" />
           <span class="nav__btn-count">2</span>
         </button>
-      </ul>
+      </div>
     </div>
   </div>
   <div id="modal" class="modal">
@@ -74,7 +97,7 @@
   <div class="hero__container">
     <div class="hero__content">
       <div class="hero__title">
-        <h1>Listen to<br />the <span>amazing</span> music sound.</h1>
+        <h1>Listen to the&nbsp;<span>amazing</span> music sound.</h1>
       </div>
       <div class="hero__desc"><p>Experience music like never before</p></div>
       <div class="hero__link">
@@ -924,47 +947,8 @@
   </div>
 </div>
 
-    <section class="promotion">
-  <div class="promotion__container">
-    <div class="promotion__content">
-      <div class="promotion__desc">
-        <p class="promotion__tagline">PROMOTION</p>
-        <h2 class="promotion__title">Hurry up! 40% OFF</h2>
-        <div class="promotion__text">
-          <p>Thousands of high tech are waiting for you</p>
-        </div>
-      </div>
-
-      <div class="promotion__timer">
-        <p class="promotion__expires">Offer expires in:</p>
-        <div class="timer">
-  <div class="timer__el">
-    <div class="timer__value" id="days"></div>
-    <div class="timer__desc">Days</div>
-  </div>
-  <div class="timer__el">
-    <div class="timer__value" id="hours"></div>
-    <div class="timer__desc">Hours</div>
-  </div>
-  <div class="timer__el">
-    <div class="timer__value" id="minutes"></div>
-    <div class="timer__desc">Minutes</div>
-  </div>
-  <div class="timer__el">
-    <div class="timer__value" id="seconds"></div>
-    <div class="timer__desc">Seconds</div>
-  </div>
-</div>
-
-      </div>
-
-      <div class="promotion__btn">
-        <a href="#!" class="btn btn--small">Shop now</a>
-      </div>
-    </div>
-  </div>
-</section>
- <section class="values">
+    
+    <section class="values">
   <div class="container">
     <div class="values__grid">
       <div class="value">
@@ -991,8 +975,7 @@
     </div>
   </div>
 </section>
-
-    <section class="newsletter">
+ <section class="newsletter">
   <div class="newsletter__content">
     <h2 class="newsletter__title headline-4">Join Our Newsletter</h2>
     <p class="newsletter__desc">
@@ -1011,44 +994,8 @@
     </form>
   </div>
 </section>
- <footer class="footer">
-  <div class="container">
-    <div class="footer__row footer__row-top">
-      <div class="footer__title">
-        <div class="footer__logo">3legant<span>.</span></div>
-        <div class="footer__separator"></div>
-        <div class="footer__store">Headphone Store</div>
-      </div>
-      <ul class="footer__nav">
-        <li><a href="#!">Home</a></li>
-        <li><a href="#!">Shop</a></li>
-        <li><a href="#!">Product</a></li>
-        <li><a href="#!">Blog</a></li>
-        <li><a href="#!">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="footer__row footer__row--border">
-      <div class="footer__copyrights">
-        <p>Copyright © 2023 3legant. All rights reserved</p>
-        <a href="#!">Privacy Policy</a>
-        <a href="#!">Terms of Use</a>
-      </div>
 
-      <div class="footer__socials">
-        <a href="#!"
-          ><img src="./../../img/socials/instagram.svg" alt="instagram"
-        /></a>
-        <a href="#!"
-          ><img src="./../../img/socials/facebook.svg" alt="facebook"
-        /></a>
-        <a href="#!"
-          ><img src="./../../img/socials/youtube.svg" alt="youtube"
-        /></a>
-      </div>
-    </div>
-  </div>
-</footer>
-
+    
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>

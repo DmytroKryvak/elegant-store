@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
 
   @include mediaBg() {
-    background-image: url("./../img/newsletter/bg@2x.jpg");
+    background-image: url("./../../img/newsletter/bg@2x.jpg");
   }
 }
 

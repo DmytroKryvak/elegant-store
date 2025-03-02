@@ -3,6 +3,20 @@
   background-color: #ffc95c;
 }
 
+.nav__logo {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.nav__btn-mobile-nav {
+  display: none;
+
+  @include mobile() {
+    display: block;
+  }
+}
+
 .nav__row {
   display: flex;
   align-items: center;
@@ -50,4 +64,12 @@
   line-height: 20px;
   font-weight: 700;
   color: var(--yellow);
+}
+
+@include mobile() {
+  .nav__list,
+  .nav__btn--search,
+  .nav__btn--user {
+    display: none;
+  }
 }
