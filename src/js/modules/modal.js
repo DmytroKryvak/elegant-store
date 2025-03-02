@@ -7,14 +7,14 @@ function modalWindow() {
 
     function openModal() {
       modal.classList.add("show");
-      document.body.classList.add("no-scroll"); // Заборона прокрутки
+      document.body.classList.add("no-scroll");
     }
 
     function closeModal() {
       modal.classList.remove("show");
-      document.body.classList.remove("no-scroll"); // Відновлення прокрутки
+      document.body.classList.remove("no-scroll");
       setTimeout(() => {
-        form.reset(); // Очищення полів форми після анімації
+        form.reset();
       }, 300);
     }
 
