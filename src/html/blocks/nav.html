@@ -1,0 +1,55 @@
+<nav class="nav">
+  <div class="container">
+    <div class="nav__row">
+      <div class="nav__logo">
+        <button class="nav__btn-mobile-nav">
+          <img
+            src="./img/icons/menu-line-horizontal.svg"
+            alt="menu navigation"
+          />
+        </button>
+        <a href="" class="nav__logo logo">3legant.</a>
+      </div>
+
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#!" class="nav__link">Home</a></li>
+        <li class="nav__item">
+          <button href="#!" class="nav__link">
+            Shop <img src="./img/icons/chevron-down.svg" alt="Icon down" />
+          </button>
+        </li>
+        <li class="nav__item">
+          <button href="#!" class="nav__link">
+            Product <img src="./img/icons/chevron-down.svg" alt="Icon down" />
+          </button>
+        </li>
+        <li class="nav__item"><a href="#!" class="nav__link">Contact Us</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="nav__btn nav__btn--search">
+          <img src="./img/icons/search.svg" alt="search" />
+        </button>
+        <button class="nav__btn nav__btn--user" id="profileBtn">
+          <img src="./img/icons/user.svg" alt="user" />
+        </button>
+        <button class="nav__btn">
+          <img src="./img/icons/shopping-bag.svg" alt="Shop Bag" />
+          <span class="nav__btn-count">2</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times</span>
+      <h2 class="modal__title">Вхід</h2>
+      <form class="login__form" id="loginForm">
+        <label>Email</label>
+        <input class="login__input" type="email" required />
+        <label>Пароль</label>
+        <input class="login__input" type="password" required />
+        <button class="login__btn" type="submit">Увійти</button>
+      </form>
+    </div>
+  </div>
+</nav>
