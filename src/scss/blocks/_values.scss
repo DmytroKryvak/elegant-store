@@ -9,4 +9,10 @@
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+
+  @include mobile() {
+    gap: 24px 8px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
 }
