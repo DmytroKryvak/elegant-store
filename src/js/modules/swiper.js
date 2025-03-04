@@ -9,7 +9,6 @@ function swiper() {
       clickable: true,
       renderBullet: function (index, className) {
         if (index < 3) {
-          // Лишаємо тільки 3 точки
           return `<span class="${className}"></span>`;
         }
         return "";
@@ -21,8 +20,6 @@ function swiper() {
       },
     },
   });
-
-  console.log("Swiper запущено!", swiper);
 }
 
 export default swiper;
