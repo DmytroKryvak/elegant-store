@@ -10,5 +10,5 @@ timer();
 import modalWindow from "./modules/modal.js";
 modalWindow();
 
-// import mobileNav from "./modules/mobile-nav.js";
-// mobileNav();
+import mobileNav from "./modules/mobile-nav.js";
+mobileNav();

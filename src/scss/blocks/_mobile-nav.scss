@@ -1,38 +1,115 @@
 .mobile-nav {
-	position: fixed;
-	// top: 0;
-	top: -100%;
-	width: 100%;
-	height: 100%;
-    z-index: 99;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 343px;
+  padding: 24px;
+  background-color: #fff;
 
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-	justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    // background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
-	background: rgb(130, 156, 168);
-	transition: all 0.2s ease-in;
+  //   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in;
+  transform: translateX(-50%);
+
+  &--open {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(0%);
+  }
 }
 
-.mobile-nav--open {
-	top: 0;
+.mobile-nav-fade {
+  position: fixed;
+
+  z-index: 9;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(86, 86, 86, 0.5);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in;
+
+  &--open {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+  }
 }
 
-.mobile-nav a {
-	color: #fff;
+.mobile-nav__top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.mobile-nav__list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	row-gap: 20px;
-	font-size: 28px;
+.mobile-nav__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-	& .active {
-		opacity: 0.5;
-	}
+.mobile-nav__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav__search-label {
+  padding: 11px 16px;
+
+  border: 1px solid #6c7275;
+  border-radius: 6px;
+  height: 46px;
+
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.mobile-nav__search-input {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6c7275;
+}
+
+.mobile-nav__item {
+  padding: 16px 0;
+  border-bottom: 1px solid #e8ecef;
+  font-size: 14px;
+
+  &--gray {
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+}
+
+.mobile-nav__link,
+a.mobile-nav__link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #141718;
+
+  &--gray {
+    color: #6c7275;
+  }
+}
+
+.mobile-nav__socials {
+  display: flex;
+  gap: 24px;
 }
