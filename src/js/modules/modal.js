@@ -2,7 +2,6 @@ function modalWindow() {
   document.addEventListener("DOMContentLoaded", function () {
     let modal = document.getElementById("modal");
     let profileBtn = document.getElementById("profileBtn");
-    let signInBtn = document.getElementById("signInBtn");
     let closeBtn = document.querySelector(".close");
     let form = document.getElementById("loginForm");
 
@@ -13,13 +12,13 @@ function modalWindow() {
 
     function closeModal() {
       modal.classList.remove("show");
+      document.body.classList.remove("no-scroll");
       setTimeout(() => {
         form.reset();
       }, 300);
     }
 
     profileBtn.addEventListener("click", openModal);
-    signInBtn.addEventListener("click", openModal);
     closeBtn.addEventListener("click", closeModal);
 
     window.addEventListener("click", function (event) {
