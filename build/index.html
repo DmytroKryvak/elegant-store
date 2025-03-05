@@ -39,13 +39,13 @@
   <div class="container">
     <div class="nav__row">
       <div class="nav__logo">
-        <button class="nav__btn-mobile-nav">
+        <button class="nav__btn-mobile-nav" id="mobile-nav-btn">
           <img
             src="./img/icons/menu-line-horizontal.svg"
             alt="menu navigation"
           />
         </button>
-        <a href="" class="nav__logo logo">3legant.</a>
+        <a href="#!" class="nav__logo logo">3legant<span>.</span></a>
       </div>
 
       <ul class="nav__list">
@@ -79,19 +79,103 @@
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close">&times</span>
-      <h2 class="modal__title">Вхід</h2>
+      <h2 class="modal__title">Login</h2>
       <form class="login__form" id="loginForm">
         <label>Email</label>
         <input class="login__input" type="email" required />
-        <label>Пароль</label>
+        <label>Password</label>
         <input class="login__input" type="password" required />
-        <button class="login__btn" type="submit">Увійти</button>
+        <button class="login__btn" type="submit">Sign In</button>
       </form>
     </div>
   </div>
 </nav>
 
-    <section class="hero">
+    <div class="mobile-nav">
+  <div class="mobile-nav__top">
+    <div class="mobile-nav__header">
+      <a href="#!" class="logo logo--small">3legant<span>.</span></a>
+      <button id="close-mobile-nav">
+        <img src="./img/icons/close-nav.svg" alt="close" />
+      </button>
+    </div>
+    <form class="mobile-nav__search">
+      <div class="mobile-nav__search-label">
+        <img src="./img/icons/search.svg" alt="search" />
+        <input
+          class="mobile-nav__search-input"
+          type="text"
+          placeholder="Search"
+        />
+      </div>
+    </form>
+
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item">
+        <a href="#!" class="mobile-nav__link">Home</a>
+      </li>
+      <li class="mobile-nav__item">
+        <button href="#!" class="mobile-nav__link">
+          Shop <img src="./img/icons/chevron-down.svg" alt="Icon down" />
+        </button>
+      </li>
+      <li class="mobile-nav__item">
+        <button href="#!" class="mobile-nav__link">
+          Product <img src="./img/icons/chevron-down.svg" alt="Icon down" />
+        </button>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#!" class="mobile-nav__link">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-nav__bottom">
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item mobile-nav__item--gray">
+        <a href="#!" class="mobile-nav__link mobile-nav__link--gray"
+          >Cart
+          <span class="nav__btn">
+            <img src="./img/icons/shopping-bag.svg" alt="Cart" />
+            <span class="nav__btn-count nav__btn-count--white">2</span>
+          </span>
+        </a>
+      </li>
+      <li class="mobile-nav__item mobile-nav__item--gray">
+        <a href="#!" class="mobile-nav__link mobile-nav__link--gray"
+          >Wishlist
+          <span class="nav__btn">
+            <img src="./img/icons/heart.svg" alt="Wishlist" />
+            <span class="nav__btn-count nav__btn-count--white">2</span>
+          </span></a
+        >
+      </li>
+    </ul>
+    <div class="mobile-nav__sign-in">
+      <button id="signInBtn" class="login__btn" type="submit">Sign In</button>
+    </div>
+    <div class="mobile-nav__socials">
+      <a href="#!"
+        ><img src="./img/socials-black/instagram.svg" alt="instagram"
+      /></a>
+      <a href="#!"
+        ><img src="./img/socials-black/facebook.svg" alt="facebook"
+      /></a>
+      <a href="#!"
+        ><img src="./img/socials-black/youtube.svg" alt="youtube"
+      /></a>
+    </div>
+  </div>
+</div>
+<div class="mobile-nav-fade"></div>
+
+<!-- <ul class="mobile-nav__list">
+	  <li><a href="#" class="active">Home</a></li>
+	  <li><a href="#!">Services</a></li>
+	  <li><a href="#!">About</a></li>
+	  <li><a href="#!">Projects</a></li>
+	  <li><a href="#!">Contact</a></li>
+  </ul> -->
+ <section class="hero">
   <div class="container"></div>
   <div class="hero__container">
     <div class="hero__content">
@@ -105,7 +189,8 @@
     </div>
   </div>
 </section>
- <section class="arrivals">
+
+    <section class="arrivals">
   <div class="container">
     <div class="arrivals__row">
       <div class="arrivals__title">
@@ -498,8 +583,7 @@
     </div>
   </div>
 </section>
-
-    <section class="collection">
+ <section class="collection">
   <div class="container">
     <div class="collection__title">
       <h2 class="headline-4">Shop Collection</h2>
@@ -535,7 +619,8 @@
     </div>
   </div>
 </section>
- <div class="bestseller">
+
+    <div class="bestseller">
   <div class="container">
     <div class="bestseller__title">
       <h2 class="headline-4">Best Seller</h2>
@@ -945,8 +1030,7 @@
     </div>
   </div>
 </div>
-
-    <section class="promotion">
+ <section class="promotion">
   <div class="promotion__container">
     <div class="promotion__content">
       <div class="promotion__desc">
@@ -986,7 +1070,8 @@
     </div>
   </div>
 </section>
- <section class="values">
+
+    <section class="values">
   <div class="container">
     <div class="values__grid">
       <div class="value">
@@ -1013,8 +1098,7 @@
     </div>
   </div>
 </section>
-
-    <section class="newsletter">
+ <section class="newsletter">
   <div class="newsletter__content">
     <h2 class="newsletter__title headline-4">Join Our Newsletter</h2>
     <p class="newsletter__desc">
@@ -1033,7 +1117,8 @@
     </form>
   </div>
 </section>
- <footer class="footer">
+
+    <footer class="footer">
   <div class="container">
     <div class="footer__row footer__row-top">
       <div class="footer__title">
@@ -1052,20 +1137,18 @@
     <div class="footer__row footer__row--border">
       <div class="footer__copyrights">
         <p>Copyright © 2023 3legant. All rights reserved</p>
-        <a href="#!">Privacy Policy</a>
-        <a href="#!">Terms of Use</a>
+        <p class="footer__copyrights-links">
+          <a href="#!">Privacy Policy</a>
+          <a href="#!">Terms of Use</a>
+        </p>
       </div>
 
       <div class="footer__socials">
         <a href="#!"
-          ><img src="./../../img/socials/instagram.svg" alt="instagram"
+          ><img src="./img/socials/instagram.svg" alt="instagram"
         /></a>
-        <a href="#!"
-          ><img src="./../../img/socials/facebook.svg" alt="facebook"
-        /></a>
-        <a href="#!"
-          ><img src="./../../img/socials/youtube.svg" alt="youtube"
-        /></a>
+        <a href="#!"><img src="./img/socials/facebook.svg" alt="facebook" /></a>
+        <a href="#!"><img src="./img/socials/youtube.svg" alt="youtube" /></a>
       </div>
     </div>
   </div>

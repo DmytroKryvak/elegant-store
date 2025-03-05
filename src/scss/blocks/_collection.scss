@@ -1,6 +1,7 @@
 .collection {
   @include mobile() {
     padding-bottom: 40px;
+    display: none;
   }
 }
 
